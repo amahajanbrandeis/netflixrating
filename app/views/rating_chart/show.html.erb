@@ -1,0 +1,15 @@
+<h1>Movie Ratings</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Rating</th>
+  </tr>
+  <% @movie_rating.each do |mr| %>
+    <tr>
+      <td> <%= mr.name %> </td>
+      <td> <%= mr.rating %> </td>
+    </tr>
+  <%end%>
+
+</table>

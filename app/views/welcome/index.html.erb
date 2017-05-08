@@ -1,0 +1,6 @@
+<h1>Netflix Movie Rating Aggregator</h1>
+<h1>Find RottenTomatoes Rating of Netflix Movies!</h1>
+<%= button_to 'Repopulate', {:controller => "welcome", :action => "repopulate"  }, :method=>:post %>
+<%= button_to 'Show Ratings', {:controller => "rating_chart", :action => "show" }, :method=>:get %>
+<p>Instructions: In the code, input your Netflix email and password, and the genre code you would like ratings for.</p>
+<p>Press Repopulate to fill the database, and then "Show Ratings" to see the list of highest rated movies from that genre.</p>
